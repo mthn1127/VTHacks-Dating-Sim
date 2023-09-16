@@ -1,0 +1,57 @@
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+body, html{
+    height: 100%;
+}
+
+@font-face {
+    font-family: cute;
+    font-style: normal;
+    font-weight: 700;
+    src: local('Cute'), url(https://fonts.cdnfonts.com/s/55722/Cute-Bold.woff) format('woff');
+}
+
+.title {
+    font-family: 'Cute', sans-serif;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #CBC3E3;
+    background-color: #CBC3E3;
+    font-size: 200px;
+    border-radius: 25px;
+}
+
+.textbox {
+    border-width: 3px;
+    border-style: solid;
+    border-color: #CBC3E3;
+    background-color: #CBC3E3;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    top: 100px;
+    width: 50%;
+}
