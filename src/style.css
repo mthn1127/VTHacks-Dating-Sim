@@ -11,6 +11,20 @@
     transform: translate(-50%, -50%);
 }
 
+.centeredbottomlong{
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centeredbottomshort{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
 .bg {
     position: fixed;
     top: 0;
@@ -40,11 +54,16 @@ body, html{
     border-radius: 25px;
 }
 
-.textbox {
-    border-width: 3px;
+.mctextbox {
+    border-width: 10px;
+    border-radius: 20px;
+    font-size: 50px;
     border-style: solid;
-    border-color: #CBC3E3;
-    background-color: #CBC3E3;
+    font-family:Arial, Helvetica, sans-serif;
+    color: black;
+    border-color: #544B3E;
+    background-color: #F7DEB7;
+    margin-left: auto;
 }
 
 .center {
@@ -59,3 +78,12 @@ body, html{
 .body {
     background-color: #CBC3E3;
 }
+
+.dedbg {
+    background-color: #CBC3E3;
+}
+
+.header {
+    background-color:#CBC3E3;
+}
+
