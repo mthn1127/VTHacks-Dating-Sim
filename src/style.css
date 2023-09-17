@@ -13,7 +13,14 @@
 
 .centeredbottomlong{
     position: absolute;
-    bottom: -10%;
+    bottom: -5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centeredbottomlong2{
+    position: absolute;
+    bottom: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -24,6 +31,28 @@
     left: 50%;
     transform: translate(-50%, -50%); 
 }
+
+.centeredmiddleshort{
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+    transform: translate(-50%, -50%); 
+}
+
+.bottomright {
+    position: absolute;
+    bottom: 10%;
+    right: 25%;
+    transform: translate(-50%, -50%); 
+}
+
 
 .bg {
     position: fixed;

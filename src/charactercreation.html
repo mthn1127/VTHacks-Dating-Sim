@@ -2,9 +2,9 @@
 <script src="script.js"></script>
 <h1>Character Creation</h1>
 
-<form>
-    <label for="name">First name:</label><br>
-    <input type="text" id="name" name="name"><br>
+<form id="myForm">
+    <label for="name">First Name:</label><br>
+    <input type="text" id="nameInput" placeholder="Enter your name"><br>
 
     <label for="pronouns">Pronouns:</label><br>
     <input type="radio" name="pronoun" value="she/her">
@@ -13,7 +13,7 @@
     <label for="css">he/him</label><br>
     <input type="radio" name="pronoun" value="they/them">
     <label for="javascript">they/them</label><br>
-    <input type="submit" value="Submit" onclick="setIdentity();">
+    <input type="submit" onclick="setIdentity();">
 </form>
 
 <h4>Skin Color</h4>
@@ -32,7 +32,7 @@
     </script>
 
 <h4>Hair Color</h4>
-	<label for="cp2">Choose Skin Color: </label>
+	<label for="cp2">Choose Hair Color: </label>
     <input type="color" id="cp2" value="0000ff">
     <p id="output2">Hex Color</p>
 
@@ -47,7 +47,7 @@
     </script>
 
 <h4>Eye Color</h4>
-	<label for="cp3">Choose Skin Color: </label>
+	<label for="cp3">Choose Eye Color: </label>
     <input type="color" id="cp3" value="0000ff">
     <p id="output3">Hex Color</p>
 
@@ -61,7 +61,6 @@
         }
     </script>
 
-
 <a href="intro1.html">
-    <button class="continue"><b>Continue</b></button>
+    <button class="continue" onclick="storeName"><b>Continue</b></button>
 </a>

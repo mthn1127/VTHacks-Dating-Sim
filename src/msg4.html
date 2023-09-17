@@ -6,9 +6,10 @@
     <div class="container">
         <div class="bg">
             <a>
-                <img class="bg" id="myImage" src="images/intro9pic.png" alt="Clickable Image">
+                <img class="bg" id="myImage" src="images/msg2pic.png" alt="Clickable Image">
                 </a>
-                <div id="d1" class="centeredbottomshort mctextbox">Temp</div>
+                <div id="d1" class="centeredbottomlong mctextbox">Temp</div>
+                
                 <script>
                     document.getElementById("d1").style.visibility = "hidden"
                     let clickState = 0;
@@ -21,18 +22,18 @@
     
                     function doAction() {
                         clickState++;
-        
+                        document.getElementById("d1").innerHTML = "Amelia agrees to come with you, but you two ended up empty handed. Although, you two get to know each other better. You learned that she loves reading and horses."
+
             if (clickState == 1 ) {             
                 document.getElementById("d1").style.visibility = "visible"
-                document.getElementById("d1").innerHTML = "Hey, watch it!"
             } else if (clickState == 2 ) {
-                document.getElementById("d1").innerHTML = "Uh sorry. Listen, my bike is missing. It's an electric white bike with red batteries. Have you seen it?"
+                document.getElementById("d1").innerHTML = "I’m sorry we couldn’t find your bike, but keep trying! Never back down never what?!"
             } else if (clickState == 3 ) {
-                document.getElementById("d1").innerHTML = "Oh... Sorry to hear that. I'll keep an eye out for it."
+                document.getElementById("d1").innerHTML = "Never give up! Hahahhaha! Thanks for helping me look and for the encouragement."
             } else if (clickState == 4 ) {
-                document.getElementById("d1").innerHTML = "Okay! I'll give you my number. Text me if you see my bike."
+                document.getElementById("d1").innerHTML = "Haha that's the spirit (name)! Your bike will turn up eventually don't worry!"
             } else if (clickState == 5 ) {
-                window.location.href = "intro10.html";
+                window.location.href = "msg5.html";
             } 
         }
     </script>

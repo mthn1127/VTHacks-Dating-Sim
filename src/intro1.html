@@ -2,21 +2,19 @@
 
 <link rel="stylesheet" href="style.css">
 
-<head>
-    <script> src="script.js"</script>
-    <h1>Hello <span id="name"></span></h1>
-    <p>Pronouns: <span id="pronoun"></span></p>
-    <script>
-        document.getElementById("name").textContent = name;
-        document.getElementById("pronoun").textContent = pronoun;
-    </script>
 
+<head>
     <div class="container">
         <div class="bg">
             <a href="intro2.html">
                 <img class="bg" src="images/intro1pic.png">
             </a>
-            <div class="centeredbottomlong mctextbox">You are (name), a college student living in Trackers Hill Apartments.  It is 7:20 AM, time to get ready for school!</div>
+            <div id="d1" class="centeredbottomlong mctextbox">You are (name), a college student living in Trackers Hill Apartments.  It is 7:20 AM, time to get ready for school!</div>
+            <script>
+                var firstName = localStorage.getItem("fullName");
+                let text = document.getElementById("d1").innerHTML;
+                document.getElementById("d1").innerHTML = text.replace("(name)", firstName);
+            </script>
         </div>
     </div>
 </head>
