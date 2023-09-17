@@ -9,10 +9,22 @@
         <a href="charactercreation.html">
             <img class="center" src="images/jerome.jpg" alt="Jerome the Bike">
         </a> 
-        <p style="text-align: center">
+        <p id="d1" style="text-align: center">
              <em>In loving memory of Jerome <br>
              July 2023 - September 2023</em>
         </em></p>
+
+        <script>
+            document.getElementById("d1").style.visibility = "hidden"
+            
+                document.addEventListener("click", function() {
+                    doAction();
+                });
+            
+                function doAction() {
+                        document.getElementById("d1").style.visibility = "visible"
+                }
+            </script>
         
     </div>
     </body>
