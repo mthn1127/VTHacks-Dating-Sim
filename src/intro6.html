@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="style.css">
+
+<head>
+    
+
+    <div class="container">
+        <div class="bg">
+            <a>
+                <img class="bg" id="myImage" src="images/intro6pic.png" alt="Clickable Image">
+                </a>
+                <div id="d1" class="centeredbottomshort mctextbox">Temp</div>
+                <script>
+                    document.getElementById("d1").style.visibility = "hidden"
+                    let clickState = 0;
+                    
+                    const myImage = document.getElementById("myImage");
+    
+                    myImage.addEventListener("click", function() {
+                        doAction();
+                    });
+    
+                    function doAction() {
+                        clickState++;
+        
+            if (clickState == 1 ) {             
+                document.getElementById("d1").style.visibility = "visible"
+                document.getElementById("d1").innerHTML = "Ugh, maybe the people on the first floor with camera will know what happened."
+            } else if (clickState == 2 ) {
+                document.getElementById("d1").innerHTML = "I’m (name)! I think my bike was stolen.  I noticed you have a camera outside your door, do you think you could get the footage from this morning?"
+            } else if (clickState == 3 ) {
+                document.getElementById("d1").innerHTML = "I’m Amelia! Sorry to hear that, but the camera belongs to my roommate.  Let me get your number, and I’ll ask her for them later today!"
+            } else if (clickState == 4 ) {
+                document.getElementById("d1").innerHTML = "Thanks!"
+            } else if (clickState == 5 ) {
+                window.location.href = "intro7.html";
+            } 
+        }
+    </script>
+        </div>
+    </div>
+</head>

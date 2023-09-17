@@ -20,7 +20,7 @@
 
 .centeredbottomshort{
     position: absolute;
-    bottom: 0%;
+    bottom: 10%;
     left: 50%;
     transform: translate(-50%, -50%); 
 }
@@ -75,15 +75,10 @@ body, html{
     width: 50%;
 }
 
-.body {
-    background-color: #CBC3E3;
-}
-
-.dedbg {
-    background-color: #CBC3E3;
-}
-
 .header {
     background-color:#CBC3E3;
 }
 
+.div {
+    background-color:#CBC3E3;
+}

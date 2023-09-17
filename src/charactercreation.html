@@ -17,14 +17,50 @@
 </form>
 
 <h4>Skin Color</h4>
-    <label for="colorpicker">Choose Skin Color: </label>
-    <input type="color" id="colorpicker" value="0000ff">
-    var skin = document.getElementById("colorpicker").value;
+    <label for="cp1">Choose Skin Color: </label>
+    <input type="color" id="cp1" value="0000ff">
+    <p id="output1">Hex Color</p>
+
+    <script>
+        document.addEventListener("click", function() {
+            do1();
+        });
+        function do1() {
+            var skin = document.getElementById("cp1").value;
+        document.getElementById("output1").innerHTML = skin
+        }
+    </script>
+
 <h4>Hair Color</h4>
+	<label for="cp2">Choose Skin Color: </label>
+    <input type="color" id="cp2" value="0000ff">
+    <p id="output2">Hex Color</p>
 
-
+    <script>
+        document.addEventListener("click", function() {
+            do2();
+        });
+        function do2() {
+            var skin = document.getElementById("cp2").value;
+        document.getElementById("output2").innerHTML = skin
+        }
+    </script>
 
 <h4>Eye Color</h4>
+	<label for="cp3">Choose Skin Color: </label>
+    <input type="color" id="cp3" value="0000ff">
+    <p id="output3">Hex Color</p>
+
+    <script>
+        document.addEventListener("click", function() {
+            do3();
+        });
+        function do3() {
+            var skin = document.getElementById("cp3").value;
+        document.getElementById("output3").innerHTML = skin
+        }
+    </script>
+
 
 <a href="intro1.html">
     <button class="continue"><b>Continue</b></button>
